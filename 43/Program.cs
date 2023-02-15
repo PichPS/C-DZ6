@@ -14,10 +14,16 @@ int b2 = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите точку 2: ");
 int k2 = Convert.ToInt32(Console.ReadLine());
 
-double y = k1 * x + b1;
-double y = k2 * x + b2;
-double x = (y-b1)/k1;
-double x = (y-b2)/k2;
+// double y = k1 * x + b1;
+// double y = k2 * x + b2;
+// double x = (y-b1)/k1;
+// double x = (y-b2)/k2;
+double y = 0;
+double x = 0;
+while (y == k1 * x + b1)
+{
+    y = k2 * x + b2;
+}
 
 System.Console.WriteLine($"({x},{y})");
 
